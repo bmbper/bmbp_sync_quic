@@ -1,0 +1,32 @@
+[package]
+name = "bmbp_msg_file"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tracing = "0.1.40"
+tracing-subscriber ={version = "0.3.18",features = ["env-filter"]}
+tokio = {version = "1.40.0", features = ["full"]}
+tower-http = "0.5.2"
+axum = { version = "0.7.5",features = ["default"] }
+rust-embed = "8.5.0"
+tera = {version = "1.20.0"}
+once_cell = "1.19.0"
+serde = {version = "1.0.209",features = ["derive"]}
+serde_json = "1.0.82"
+
+futures = "0.3.31"
+rdkafka = "0.36.2"
+r2d2 = "0.8.10"
+r2d2_sqlite ="0.25.0"
+r2d2-oracle = "0.7.0"
+redb = { version = "2.1.2" }
+rand = "0.8"
+redis = "0.27.5"
+mime_guess = "2.0.5"
+tower = "0.5.1"
+uuid = { version = "1.11.0", features = ["v4"] }
+
+#
+sysinfo = "0.28.4"
+chrono = "0.4.38"
